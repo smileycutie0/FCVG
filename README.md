@@ -101,15 +101,15 @@ or run
 python demo_FCVG.py 
 ```
 
->   --pretrained_model_name_or_path: pretrained SVD model folder, we fintune models based on [SVD-XT1.1](https://huggingface.co/stabilityai/stable-video-diffusion-img2vid-xt-1-1)
->   --controlnext_path:  [ControlNeXt](https://github.com/dvlab-research/ControlNeXt) model path
->   --unet_path: finetuned unet model path
->   --image1_path: start frame path
->   --image2_path: end frame path
->   --output_dir: folder path to save the results
->   --control_weight: frame-wise condition control weight, default is 1.0
->   --num_inference_steps: diffusion denoise steps, default is 25
->   --height : input frames height, default is 576
+>   --pretrained_model_name_or_path: pretrained SVD model folder, we fintune models based on [SVD-XT1.1](https://huggingface.co/stabilityai/stable-video-diffusion-img2vid-xt-1-1)\
+>   --controlnext_path:  [ControlNeXt](https://github.com/dvlab-research/ControlNeXt) model path\
+>   --unet_path: finetuned unet model path\
+>   --image1_path: start frame path\
+>   --image2_path: end frame path\
+>   --output_dir: folder path to save the results\
+>   --control_weight: frame-wise condition control weight, default is 1.0\
+>   --num_inference_steps: diffusion denoise steps, default is 25\
+>   --height : input frames height, default is 576\
 >   --width: input frames width, default is 1024
 
 
