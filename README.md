@@ -5,7 +5,7 @@ This repository is the official PyTorch implementation of "Generative Inbetweeni
 [![arXiv](https://img.shields.io/badge/arXiv-2412.xxxx-b31b1b.svg)]()
 [![Project Page](https://img.shields.io/badge/Project-Website-green)](https://fcvg-inbetween.github.io/)
 
-## 🖼️ Resluts
+## 🖼️ Results
 
 <table class="center">
     <tr style="font-weight: bolder;text-align:center;">
