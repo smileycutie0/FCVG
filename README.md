@@ -2,7 +2,7 @@
 #### Tianyi Zhu,  Dongwei Ren, Qilong Wang, Xiaohe Wu, Wangmeng Zuo
 This repository is the official PyTorch implementation of "Generative Inbetweening through Frame-wise Conditions-Driven Video Generation".
 
-[![arXiv](https://img.shields.io/badge/arXiv-2412.xxxx-b31b1b.svg)]()
+[![arXiv](https://img.shields.io/badge/arXiv-2412.11755-b31b1b.svg)](https://arxiv.org/abs/2412.11755)
 [![Project Page](https://img.shields.io/badge/Project-Website-green)](https://fcvg-inbetween.github.io/)
 
 ## 🖼️ Results
@@ -124,7 +124,12 @@ python demo_FCVG.py
 ## 🖊️ Citation
 
 ```bibtex
-
+@article{zhu2024generative,
+  title={Generative Inbetweening through Frame-wise Conditions-Driven Video Generation},
+  author={Zhu, Tianyi and Ren, Dongwei and Wang, Qilong and Wu, Xiaohe and Zuo, Wangmeng},
+  journal={arXiv preprint arXiv:2412.11755},
+  year={2024}
+}
 ```
 
 
