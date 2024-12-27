@@ -177,20 +177,12 @@ def plot_color_line_matches_opencv(image, lines, save_path='./', correct_matches
     n_lines = len(lines[0])
     colors = sns.color_palette('husl', n_colors=n_lines)
     np.random.shuffle(colors)
-
-
-    alpha = 0.5
-    if correct_matches is not None:
-        alphas = np.where(correct_matches, 1.0, 0.2)
-    else:
-        alphas = np.ones(n_lines)
     
-
     colors_bgr = [tuple(int(c * 255) for c in color) for color in colors]
     images = []
 
     idx = 0
-    for l, alpha_value in zip(lines, alphas):
+    for l in lines:
         if black:
             image = np.zeros_like(image)
         for i in range(n_lines):
@@ -200,10 +192,6 @@ def plot_color_line_matches_opencv(image, lines, save_path='./', correct_matches
 
             cv2.line(image, start_point, end_point, color, thickness=lw)
 
-            if alpha_value < 1.0:
-                overlay = image.copy()
-                cv2.line(overlay, start_point, end_point, color, thickness=lw)
-                cv2.addWeighted(overlay, alpha_value, image, 1 - alpha_value, 0, image)
         images.append(image)
         if save_path:
             cv2.imwrite(os.path.join(save_path, 'linematch{:02d}.png').format(idx), image)
