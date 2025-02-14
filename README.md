@@ -114,10 +114,9 @@ python demo_FCVG.py
 
 
 
-## ✨ News/TODO
+## ✨ Datasets
 
-- [x] Inference code of FCVG
-- [ ] Release  Datasets
+You can download our test dataset [here](https://drive.google.com/file/d/1PBPJL1W_VjaK7PwXIx6T4KV3cVD0dT4L/view?usp=drive_link).
 
 
 
