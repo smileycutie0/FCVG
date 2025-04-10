@@ -252,8 +252,8 @@ if __name__ == "__main__":
         unet=unet,
         vae=vae,
         image_encoder=image_encoder)
-    # pipeline.to(dtype=torch.float16)
-    pipeline.enable_model_cpu_offload()
+    pipeline.to(dtype=torch.float16)
+    pipeline.enable_sequential_cpu_offload()
 
 
 
