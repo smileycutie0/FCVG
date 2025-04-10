@@ -251,7 +251,8 @@ if __name__ == "__main__":
         }
     }
     device = 'cuda' if torch.cuda.is_available() else 'cpu'
-
+    dtype = torch.float16
+    
     pipeline_model = TwoViewPipeline(conf).to(device).eval()
 
     unet = UNetSpatioTemporalConditionControlNeXtModel.from_pretrained(
@@ -274,8 +275,8 @@ if __name__ == "__main__":
         unet=unet,
         vae=vae,
         image_encoder=image_encoder)
-    # pipeline.to(dtype=torch.float16)
-    pipeline.enable_model_cpu_offload()
+    pipeline.to(dtype=torch.float16)
+    pipeline.enable_sequential_cpu_offload()
 
     # logger = Traverse_Logger(args.output_dir)
     # now_time = time.strftime("%Y-%m-%d_%H:%M:%S", time.localtime())
